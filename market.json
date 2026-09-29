@@ -2,24 +2,24 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-09-29 11:32:56",
+  "updatedAt": "2026-09-29 23:12:56",
   "plugins": [
     {
       "id": "duoju-lite.zip",
       "name": "多聚短剧",
       "author": "JmwPower",
       "desc": "短剧库服务,点击打开web可实现类似于红果短剧效果的丝滑体验。以子进程方式运行，配置启动参数与环境变量后由宿主拉起。",
-      "version": "1.4.51",
+      "version": "1.4.53",
       "type": "import",
-      "size": 6341632,
+      "size": 6045359,
       "url": "packages/duoju-lite.zip",
       "icon": "icons/duoju.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "默认端口 8998 → 8999。",
-      "md5": "f5055e425017f568f91a26b7b2b7e93a",
+      "changelog": "更新更多平台支持,修复部分平台请求失效问题。",
+      "md5": "8a38807f2d8d6e29d993db9f6271d101",
       "category": "env"
     }
   ]
