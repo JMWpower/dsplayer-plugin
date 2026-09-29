@@ -11,7 +11,7 @@
       "desc": "短剧库服务,点击打开web可实现类似于红果短剧效果的丝滑体验。以子进程方式运行，配置启动参数与环境变量后由宿主拉起。",
       "version": "1.4.51",
       "type": "import",
-      "size": 6193,
+      "size": 6341632,
       "url": "packages/duoju-lite.zip",
       "icon": "icons/duoju.png",
       "tags": [
