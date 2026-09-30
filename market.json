@@ -9,9 +9,9 @@
       "name": "多聚短剧",
       "author": "JmwPower",
       "desc": "短剧库服务,点击打开web可实现类似于红果短剧效果的丝滑体验。以子进程方式运行，配置启动参数与环境变量后由宿主拉起。",
-      "version": "1.4.53",
+      "version": "1.4.54",
       "type": "import",
-      "size": 6045359,
+      "size": 6061367,
       "url": "packages/duoju-lite.zip",
       "icon": "icons/duoju.png",
       "tags": [
@@ -19,7 +19,7 @@
         "服务"
       ],
       "changelog": "更新更多平台支持,修复部分平台请求失效问题。",
-      "md5": "11fcb95fe67dc16c834ec1e33de9336e",
+      "md5": "47de383a9ff3cfa38081b2475b7fe474",
       "category": "env"
     }
   ]
