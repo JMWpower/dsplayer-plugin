@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-09-29 23:12:56",
+  "updatedAt": "2026-09-30 08:47:56",
   "plugins": [
     {
       "id": "duoju-lite.zip",
