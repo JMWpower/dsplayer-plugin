@@ -2,24 +2,42 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-09-30 08:47:56",
+  "updatedAt": "2026-10-03 19:59:26",
   "plugins": [
     {
-      "id": "duoju-lite.zip",
-      "name": "多聚短剧",
+      "id": "duoju-lite-green.zip",
+      "name": "多聚短剧·绿色版",
       "author": "JmwPower",
-      "desc": "短剧库服务,点击打开web可实现类似于红果短剧效果的丝滑体验。以子进程方式运行，配置启动参数与环境变量后由宿主拉起。",
-      "version": "1.4.54",
+      "desc": "多聚短剧精简版。",
+      "version": "1.4.56",
       "type": "import",
-      "size": 6061367,
-      "url": "packages/duoju-lite.zip",
+      "size": 6202169,
+      "url": "packages/duoju-lite-green.zip",
       "icon": "icons/duoju.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "更新更多平台支持,修复部分平台请求失效问题。",
-      "md5": "47de383a9ff3cfa38081b2475b7fe474",
+      "changelog": "20 个白名单平台。",
+      "md5": "5a20157efa082d05a64ed6976ac53436",
+      "category": "env"
+    },
+    {
+      "id": "lanmei-lite.zip",
+      "name": "蓝莓短剧",
+      "author": "lanmei",
+      "desc": "蓝莓短剧服务,点击打开web即可丝滑刷短剧。端口8997,与多聚短剧(8998)可并存安装。(已获站长授权上架)",
+      "version": "1.0.8",
+      "type": "import",
+      "size": 3337410,
+      "url": "packages/lanmei-lite.zip",
+      "icon": "icons/lanmei.png",
+      "tags": [
+        "网络",
+        "服务"
+      ],
+      "changelog": "首个上架版本。",
+      "md5": "a7765e959887b7109e1b84cf7c1f1580",
       "category": "env"
     }
   ]
