@@ -25,7 +25,7 @@
     {
       "id": "lanmei-lite.zip",
       "name": "蓝莓短剧",
-      "author": "lanmei",
+      "author": "JmwPower",
       "desc": "蓝莓短剧服务,点击打开web即可丝滑刷短剧。端口8997,与多聚短剧(8998)可并存安装。(已获站长授权上架)",
       "version": "1.0.8",
       "type": "import",
