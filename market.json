@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-03 21:13:51",
+  "updatedAt": "2026-10-03 21:39:05",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -42,20 +42,20 @@
     },{
       "id": "djduanju",
       "name": "多聚短剧配套源",
-      "author": "hjdhnx",
+      "author": "JmwPower",
       "desc": "多聚短剧配套源。",
       "version": "0.0.1",
       "type": "source",
       "category": "app",
       "url": "packages/djduanju.zip",
-      "size": 6030,
-      "md5": "56b14dcd5f492c30791ce6f0207bb134",
+      "size": 5703,
+      "md5": "9e8c53aefbf2f78702e40b47bcdcbd91",
       "changelog": "绿色版。",
       "tags": [
         "本地源",
         "应用"
       ],
-      "icon": "icons/duoju.png"
-    }
+      "icon": "icons/demo-sources.png"
+    },
   ]
 }
