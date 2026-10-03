@@ -5,7 +5,7 @@
   "updatedAt": "2026-10-03 19:59:26",
   "plugins": [
     {
-      "id": "duoju-lite-green.zip",
+      "id": "duoju_lite_green",
       "name": "多聚短剧·绿色版",
       "author": "JmwPower",
       "desc": "多聚短剧精简版。",
@@ -23,7 +23,7 @@
       "category": "env"
     },
     {
-      "id": "lanmei-lite.zip",
+      "id": "lanmei_lite",
       "name": "蓝莓短剧",
       "author": "JmwPower",
       "desc": "蓝莓短剧服务,点击打开web即可丝滑刷短剧。端口8997,与多聚短剧(8998)可并存安装。(已获站长授权上架)",
