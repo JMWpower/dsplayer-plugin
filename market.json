@@ -21,24 +21,6 @@
       "changelog": "20 个白名单平台。",
       "md5": "5a20157efa082d05a64ed6976ac53436",
       "category": "env"
-    },
-    {
-      "id": "lanmei-lite",
-      "name": "蓝莓短剧",
-      "author": "JmwPower",
-      "desc": "蓝莓短剧服务,点击打开web即可丝滑刷短剧。端口8997,与多聚短剧(8998)可并存安装。(已获站长授权上架)",
-      "version": "1.0.8",
-      "type": "import",
-      "size": 3337410,
-      "url": "packages/lanmei-lite.zip",
-      "icon": "icons/lanmei.png",
-      "tags": [
-        "网络",
-        "服务"
-      ],
-      "changelog": "首个上架版本。",
-      "md5": "a7765e959887b7109e1b84cf7c1f1580",
-      "category": "env"
     },{
       "id": "djduanju",
       "name": "多聚短剧配套源",
