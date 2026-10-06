@@ -2,8 +2,26 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-03 21:39:05",
+  "updatedAt": "2026-10-06 11:31:00",
   "plugins": [
+    {
+      "id": "lanmei-lite",
+      "name": "蓝莓短剧",
+      "author": "JmwPower",
+      "desc": "蓝莓短剧后台服务，内置网页端 /web/。",
+      "version": "1.0.13",
+      "type": "import",
+      "size": 3379196,
+      "url": "packages/lanmei-lite.zip",
+      "icon": "icons/lanmei.png",
+      "tags": [
+        "网络",
+        "服务"
+      ],
+      "changelog": "播放页只保留上一集及预载下一集，其余集数销毁释放防卡顿；全屏弹幕设置/剧评修复；积分商店/注册；QQ绑定与头像修复。",
+      "md5": "a06b8559afd72f0d0f06b13141a36f63",
+      "category": "env"
+    },
     {
       "id": "duoju-lite-green",
       "name": "多聚短剧·绿色版",
@@ -21,7 +39,8 @@
       "changelog": "20 个白名单平台。",
       "md5": "5a20157efa082d05a64ed6976ac53436",
       "category": "env"
-    },{
+    },
+    {
       "id": "djduanju",
       "name": "多聚短剧配套源",
       "author": "JmwPower",
@@ -38,6 +57,6 @@
         "应用"
       ],
       "icon": "icons/demo-sources.png"
-    },
+    }
   ]
 }
