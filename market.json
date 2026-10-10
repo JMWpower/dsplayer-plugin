@@ -103,9 +103,9 @@
       "name": "多聚听书",
       "author": "JmwPower",
       "desc": "多聚听书后端服务：16源聚合听书，内置网页端。",
-      "version": "1.8.3",
+      "version": "1.8.4",
       "type": "import",
-      "size": 6468286,
+      "size": 6544955,
       "url": "packages/duoju-ting.zip",
       "icon": "icons/duojuting.png",
       "tags": [
@@ -113,7 +113,7 @@
         "服务"
       ],
       "changelog": "首次上传版本。",
-      "md5": "a6e3124d7826411133f48bf8e2d6d57a",
+      "md5": "a3942a5e3e64358d7e09d63109f23e84",
       "category": "env"
     },
     {
