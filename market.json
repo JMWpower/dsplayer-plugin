@@ -60,21 +60,25 @@
     },
     {
       "id": "musick-api",
-      "name": "MusicK音乐后台",
+      "name": "MusicK音乐",
       "author": "JmwPower",
-      "desc": "本地音乐服务(music_api),聚合酷我/酷狗/QQ/网易云/咪咕/汽水六源的榜单、歌单、搜索与歌词。端口5566,根路径即音乐Web页;播放需在 /Script.html 导入lx音源脚本。与MusicK音乐配套源搭配使用。",
+      "desc": "本地音乐聚合服务端 v1.0.0（music_api-main：聚合酷我/酷狗/QQ/网易云/咪咕/汽水六源的榜单、歌单、搜索、歌词。安装后解压至 sdcard/dsplayer/server/node/ 并自动创建「本地音乐服务」（需先装 nodejs 运行时插件），启动后浏览器访问 http://<设备IP>:5566 即音乐 Web 页；/Script.html 导入 lx 音源脚本后方可播放非汽水源（配套「MusicK音乐配套源」在 DsPlayer 内点播，歌词/封面直出）。",
       "version": "1.0.0",
       "type": "server",
-      "size": 2045291,
+      "category": "app",
       "url": "packages/music_api-main.zip",
-      "icon": "icons/musick.png",
-      "tags": [
-        "网络",
-        "服务"
-      ],
-      "changelog": "首个上架版本:六源聚合搜索、随机歌单推荐、歌词支持、5566根路径直开Web页。",
+      "size": 2045291,
       "md5": "1fc6ac7913a14593bb6b548269b1dbe4",
-      "category": "env"
+      "changelog": "v1.0.0：5566 根路径直开音乐 Web 页；六源并发聚合搜索；随机歌单推荐。",
+      "tags": [
+        "服务",
+        "应用"
+      ],
+      "icon": "icons/musick.png",
+      "platforms": [
+        "android",
+        "win32"
+      ]
     },
     {
       "id": "musick-source",
