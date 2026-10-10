@@ -87,15 +87,15 @@
       "desc": "多聚听书后端服务",
       "version": "1.9.0",
       "type": "import",
-      "size": 3349909,
+      "size": 3349964,
       "url": "packages/duoju-ting.zip",
       "icon": "icons/duojuting.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "1.9.0 新增源、双开关（发现/搜索独立控制）、选集正序倒序。",
-      "md5": "0c244419fc9e8fad3c2db0a367bf4ed6",
+      "changelog": "1.9.0 新增源、双开关、选集正序倒序。",
+      "md5": "58167477435dc1d4df0980f39c671b22",
       "category": "env"
     },
     {
@@ -113,7 +113,7 @@
         "听书"
       ],
       "changelog": "1.9.0 新增，移除源。",
-      "md5": "8ba651cac61f13280b771c3cb9f284d3",
+      "md5": "a3334ae1e8c678559ef205b8edd4e1ad",
       "category": "source"
     }
   ]
