@@ -57,6 +57,42 @@
         "应用"
       ],
       "icon": "icons/demo-sources.png"
+    },
+    {
+      "id": "musick-api",
+      "name": "MusicK音乐后台",
+      "author": "JmwPower",
+      "desc": "本地音乐服务(music_api),聚合酷我/酷狗/QQ/网易云/咪咕/汽水六源的榜单、歌单、搜索与歌词。端口5566,根路径即音乐Web页;播放需在 /Script.html 导入lx音源脚本。与MusicK音乐配套源搭配使用。",
+      "version": "1.0.0",
+      "type": "import",
+      "size": 2045291,
+      "url": "packages/music_api-main.zip",
+      "icon": "icons/musick.png",
+      "tags": [
+        "网络",
+        "服务"
+      ],
+      "changelog": "首个上架版本:六源聚合搜索、随机歌单推荐、歌词支持、5566根路径直开Web页。",
+      "md5": "1fc6ac7913a14593bb6b548269b1dbe4",
+      "category": "env"
+    },
+    {
+      "id": "musick-source",
+      "name": "MusicK音乐配套源",
+      "author": "JmwPower",
+      "desc": "MusicK音乐后台配套源:六平台分类(排行榜/歌单)、六源并发聚合搜索、随机歌单推荐、播放带歌词。需先安装「MusicK音乐后台」。",
+      "version": "1.1.0",
+      "type": "source",
+      "category": "app",
+      "url": "packages/musick-source.zip",
+      "size": 4261,
+      "md5": "672b5166c194a36a4b00320b323b34bc",
+      "changelog": "首个上架版本:六源并发聚合搜索、随机歌单推荐、歌词双字段(lrc/subtitle)。",
+      "tags": [
+        "本地源",
+        "应用"
+      ],
+      "icon": "icons/musick.png"
     }
   ]
 }
