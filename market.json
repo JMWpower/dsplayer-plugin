@@ -5,24 +5,6 @@
   "updatedAt": "2026-10-10 15:30:00",
   "plugins": [
     {
-      "id": "lanmei-lite",
-      "name": "蓝莓短剧",
-      "author": "JmwPower",
-      "desc": "蓝莓短剧后台服务，内置网页端 /web/。",
-      "version": "1.0.14",
-      "type": "import",
-      "size": 3363548,
-      "url": "packages/lanmei-lite.zip",
-      "icon": "icons/lanmei.png",
-      "tags": [
-        "网络",
-        "服务"
-      ],
-      "changelog": "包结构调整：二进制置于包根目录，去除 bin/ds 目录。",
-      "md5": "5c77c61f6c9e85bc04609cf365f2df54",
-      "category": "env"
-    },
-    {
       "id": "duoju-lite-green",
       "name": "多聚短剧·绿色版",
       "author": "JmwPower",
