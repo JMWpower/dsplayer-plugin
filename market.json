@@ -9,9 +9,9 @@
       "name": "多聚短剧·绿色版",
       "author": "JmwPower",
       "desc": "多聚短剧精简版。",
-      "version": "1.4.58",
+      "version": "1.4.59",
       "type": "import",
-      "size": 6032879,
+      "size": 6208450,
       "url": "packages/duoju-lite-green.zip",
       "icon": "icons/duoju.png",
       "tags": [
@@ -19,7 +19,7 @@
         "服务"
       ],
       "changelog": "包结构调整：二进制置于包根目录，去除 bin/ds 目录。",
-      "md5": "b202099382a1581c28c85dea8e7ae63d",
+      "md5": "6726a6eb72f50cf3fbad90425558466c",
       "category": "env"
     },
     {
@@ -27,12 +27,12 @@
       "name": "多聚短剧配套源",
       "author": "JmwPower",
       "desc": "多聚短剧配套源。",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "type": "source",
       "category": "app",
       "url": "packages/djduanju.zip",
-      "size": 5703,
-      "md5": "9e8c53aefbf2f78702e40b47bcdcbd91",
+      "size": 5343,
+      "md5": "1644f9c8b104d263da1471d5a3733926",
       "changelog": "绿色版。",
       "tags": [
         "本地源",
@@ -67,12 +67,12 @@
       "name": "MusicK音乐配套源",
       "author": "JmwPower",
       "desc": "MusicK音乐后台配套源:六平台分类(排行榜/歌单)、六源并发聚合搜索、随机歌单推荐、播放带歌词、多线路自动换源。需先安装「MusicK音乐后台」。",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "type": "source",
       "category": "app",
       "url": "packages/musick-source.zip",
-      "size": 14925,
-      "md5": "b222471db05ff299fb51382e4bc7fe26",
+      "size": 4531,
+      "md5": "7b3b1e036c3ce0f98927427741849d4c",
       "changelog": "v1.2.0:多播放线路自动换源，后端返回多个候选链接时前端以数组形式交付播放器，起播失败自动切换下一条。",
       "tags": [
         "本地源",
@@ -85,17 +85,17 @@
       "name": "多聚听书",
       "author": "JmwPower",
       "desc": "多聚听书后端服务",
-      "version": "1.9.0",
+      "version": "1.9.2",
       "type": "import",
-      "size": 3349964,
+      "size": 3347221,
       "url": "packages/duoju-ting.zip",
       "icon": "icons/duojuting.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "1.9.0 新增源、双开关、选集正序倒序。",
-      "md5": "58167477435dc1d4df0980f39c671b22",
+      "changelog": "搜索排序优化。",
+      "md5": "86536e101f535fa231d4a301bc35a33c",
       "category": "env"
     },
     {
@@ -103,17 +103,17 @@
       "name": "多聚听书配套源",
       "author": "JmwPower",
       "desc": "多聚听书 ds 规则",
-      "version": "1.9.0",
+      "version": "1.9.1",
       "type": "source",
-      "size": 3419,
+      "size": 3767,
       "url": "packages/duoju-ting-source.zip",
       "icon": "icons/duojuting.png",
       "tags": [
         "规则",
         "听书"
       ],
-      "changelog": "1.9.0 新增，移除源。",
-      "md5": "a3334ae1e8c678559ef205b8edd4e1ad",
+      "changelog": "修复 searchUrl 为空导致的搜索无结果。",
+      "md5": "450b0d5f3b9c4f4b92726adab55adcbd",
       "category": "source"
     }
   ]
