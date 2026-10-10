@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-10 15:30:00",
+  "updatedAt": "2026-10-10",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -73,7 +73,7 @@
       "url": "packages/musick-source.zip",
       "size": 14925,
       "md5": "b222471db05ff299fb51382e4bc7fe26",
-      "changelog": "v1.2.0:多播放线路。",
+      "changelog": "v1.2.0:多播放线路自动换源，后端返回多个候选链接时前端以数组形式交付播放器，起播失败自动切换下一条。",
       "tags": [
         "本地源",
         "应用"
@@ -84,36 +84,36 @@
       "id": "duoju-ting",
       "name": "多聚听书",
       "author": "JmwPower",
-      "desc": "多聚听书后端服务：16源聚合听书，内置网页端。",
-      "version": "1.8.4",
+      "desc": "多聚听书后端服务",
+      "version": "1.9.0",
       "type": "import",
-      "size": 6544955,
+      "size": 3355534,
       "url": "packages/duoju-ting.zip",
       "icon": "icons/duojuting.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "首次上传版本。",
-      "md5": "a3942a5e3e64358d7e09d63109f23e84",
+      "changelog": "1.9.0 新增有声源、双开关（发现/搜索独立控制）、选集正序倒序。",
+      "md5": "7da5effb91c4662819cbbeac5cd93ca4",
       "category": "env"
     },
     {
       "id": "duoju-ting-source",
       "name": "多聚听书配套源",
       "author": "JmwPower",
-      "desc": "多聚听书 ds 规则：16 源聚合搜索/分类/播放，配合多聚听书后台使用。",
-      "version": "1.8.3",
+      "desc": "多聚听书 ds 规则",
+      "version": "1.9.0",
       "type": "source",
-      "size": 3091,
+      "size": 3434,
       "url": "packages/duoju-ting-source.zip",
       "icon": "icons/duojuting.png",
       "tags": [
         "规则",
         "听书"
       ],
-      "changelog": "1.8.2 全源规则。",
-      "md5": "52fd11da1bff3ca4bce1e2f49eb57ca4",
+      "changelog": "1.9.0 新增,移除源。",
+      "md5": "b4ec5e06d73ef856362847ecfc968239",
       "category": "source"
     }
   ]
