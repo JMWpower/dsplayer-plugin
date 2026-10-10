@@ -64,7 +64,7 @@
       "author": "JmwPower",
       "desc": "本地音乐服务(music_api),聚合酷我/酷狗/QQ/网易云/咪咕/汽水六源的榜单、歌单、搜索与歌词。端口5566,根路径即音乐Web页;播放需在 /Script.html 导入lx音源脚本。与MusicK音乐配套源搭配使用。",
       "version": "1.0.0",
-      "type": "import",
+      "type": "server",
       "size": 2045291,
       "url": "packages/music_api-main.zip",
       "icon": "icons/musick.png",
