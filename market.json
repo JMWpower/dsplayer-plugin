@@ -2,24 +2,24 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-06 11:31:00",
+  "updatedAt": "2026-10-10 15:30:00",
   "plugins": [
     {
       "id": "lanmei-lite",
       "name": "蓝莓短剧",
       "author": "JmwPower",
       "desc": "蓝莓短剧后台服务，内置网页端 /web/。",
-      "version": "1.0.13",
+      "version": "1.0.14",
       "type": "import",
-      "size": 3379196,
+      "size": 3363548,
       "url": "packages/lanmei-lite.zip",
       "icon": "icons/lanmei.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "主创团队信息对齐，全屏弹幕设置/剧评支持。",
-      "md5": "a06b8559afd72f0d0f06b13141a36f63",
+      "changelog": "包结构调整：二进制置于包根目录，去除 bin/ds 目录。",
+      "md5": "5c77c61f6c9e85bc04609cf365f2df54",
       "category": "env"
     },
     {
@@ -27,17 +27,17 @@
       "name": "多聚短剧·绿色版",
       "author": "JmwPower",
       "desc": "多聚短剧精简版。",
-      "version": "1.4.56",
+      "version": "1.4.58",
       "type": "import",
-      "size": 6202169,
+      "size": 6032879,
       "url": "packages/duoju-lite-green.zip",
       "icon": "icons/duoju.png",
       "tags": [
         "网络",
         "服务"
       ],
-      "changelog": "20 个白名单平台。",
-      "md5": "5a20157efa082d05a64ed6976ac53436",
+      "changelog": "包结构调整：二进制置于包根目录，去除 bin/ds 目录。",
+      "md5": "b202099382a1581c28c85dea8e7ae63d",
       "category": "env"
     },
     {
@@ -97,6 +97,42 @@
         "应用"
       ],
       "icon": "icons/musick.png"
+    },
+    {
+      "id": "duoju-ting",
+      "name": "多聚听书",
+      "author": "JmwPower",
+      "desc": "多聚听书后端服务：16源聚合听书（含番茄听书 CENC 解密播放），内置网页端。",
+      "version": "1.8.3",
+      "type": "import",
+      "size": 6468286,
+      "url": "packages/duoju-ting.zip",
+      "icon": "icons/duojuting.png",
+      "tags": [
+        "网络",
+        "服务"
+      ],
+      "changelog": "修复详情页重复追加「展开全部」按钮；番茄播放偶发风控自动重试换设备；书架 2 列书本卡、最近播放条形样式。",
+      "md5": "a6e3124d7826411133f48bf8e2d6d57a",
+      "category": "env"
+    },
+    {
+      "id": "duoju-ting-source",
+      "name": "多聚听书配套源",
+      "author": "JmwPower",
+      "desc": "多聚听书 ds 规则：16 源聚合搜索/分类/播放，配合多聚听书后台使用。",
+      "version": "1.8.3",
+      "type": "source",
+      "size": 3091,
+      "url": "packages/duoju-ting-source.zip",
+      "icon": "icons/duojuting.png",
+      "tags": [
+        "规则",
+        "听书"
+      ],
+      "changelog": "1.8.2 全源规则。",
+      "md5": "52fd11da1bff3ca4bce1e2f49eb57ca4",
+      "category": "source"
     }
   ]
 }
