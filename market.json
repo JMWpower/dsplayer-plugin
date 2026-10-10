@@ -62,7 +62,7 @@
       "id": "musick-api",
       "name": "MusicK音乐",
       "author": "JmwPower",
-      "desc": "本地音乐聚合服务端 v1.0.0（music_api-main：聚合酷我/酷狗/QQ/网易云/咪咕/汽水六源的榜单、歌单、搜索、歌词。安装后解压至 sdcard/dsplayer/server/node/ 并自动创建「本地音乐服务」（需先装 nodejs 运行时插件），启动后浏览器访问 http://<设备IP>:5566 即音乐 Web 页；/Script.html 导入 lx 音源脚本后方可播放非汽水源（配套「MusicK音乐配套源」在 DsPlayer 内点播，歌词/封面直出）。",
+      "desc": "本地音乐聚合服务端 v1.0.0（music_api-main：聚合酷我/酷狗/QQ/网易云/咪咕/汽水六源的榜单、歌单、搜索、歌词。",
       "version": "1.0.0",
       "type": "server",
       "category": "app",
@@ -102,7 +102,7 @@
       "id": "duoju-ting",
       "name": "多聚听书",
       "author": "JmwPower",
-      "desc": "多聚听书后端服务：16源聚合听书（含番茄听书 CENC 解密播放），内置网页端。",
+      "desc": "多聚听书后端服务：16源聚合听书，内置网页端。",
       "version": "1.8.3",
       "type": "import",
       "size": 6468286,
@@ -112,7 +112,7 @@
         "网络",
         "服务"
       ],
-      "changelog": "修复详情页重复追加「展开全部」按钮；番茄播放偶发风控自动重试换设备；书架 2 列书本卡、最近播放条形样式。",
+      "changelog": "首次上传版本。",
       "md5": "a6e3124d7826411133f48bf8e2d6d57a",
       "category": "env"
     },
