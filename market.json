@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-19T01:25:06+08:00",
+  "updatedAt": "2026-10-19T07:39:31+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -224,13 +224,13 @@
       "name": "炫彩主页web源",
       "author": "JmwPower",
       "desc": "稻壳适配多风格炫彩主页,安装后web源选ui即可,ui来自LZ",
-      "version": "1.0.13",
+      "version": "1.0.14",
       "type": "source",
       "category": "app",
-      "url": "packages/my-home-1.0.13.zip",
-      "size": 342018,
-      "md5": "3721c5e30b06c2fe6a4909acbbf652c4",
-      "changelog": "修复 TMDB影库 详情页空白（内联样式表达式导致模板编译失败）；删除星轨回廊皮肤",
+      "url": "packages/my-home-1.0.14.zip",
+      "size": 342743,
+      "md5": "30d40b9634e60eee6fb71640bf9dc2b2",
+      "changelog": "TMDB影库：新增播放请求头（UA/Referer）设置并随整季推送透传；新增播放方式切换（整季推送/原生详情页）；移除源分类 Tab 图标",
       "tags": [
         "本地源",
         "主页"
