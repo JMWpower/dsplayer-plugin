@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-18T23:56:33+08:00",
+  "updatedAt": "2026-10-19T00:13:15+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -224,13 +224,13 @@
       "name": "炫彩主页web源",
       "author": "JmwPower",
       "desc": "稻壳适配多风格炫彩主页,安装后web源选ui即可,ui来自LZ",
-      "version": "1.0.9",
+      "version": "1.0.10",
       "type": "source",
       "category": "app",
-      "url": "packages/my-home-1.0.9.zip",
-      "size": 353511,
-      "md5": "5d0443408daaaa0374f0bfeb3132952f",
-      "changelog": "v1.0.9：更新主页样式包（新增 TMDB影库、星轨回廊、观影航站楼等界面）。",
+      "url": "packages/my-home-1.0.10.zip",
+      "size": 353563,
+      "md5": "04c7234b2e2d9e23043428ca83e95ea3",
+      "changelog": "v1.0.10：修复 TMDB影库 缺少 Vue 引用导致的弹窗乱码与无法填写 Key。",
       "tags": [
         "本地源",
         "主页"
