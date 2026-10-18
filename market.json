@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-19T00:50:04+08:00",
+  "updatedAt": "2026-10-19T00:52:59+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -228,8 +228,8 @@
       "type": "source",
       "category": "app",
       "url": "packages/my-home-1.0.12.zip",
-      "size": 354672,
-      "md5": "c377b42756195859b7157a1a0c39beaf",
+      "size": 354654,
+      "md5": "621ae450500c5084061b6825ae883d40",
       "changelog": "v1.0.12：TMDB 详情页海报加高；剧集按序号绑定第一条线路并带入全集；按播出日期准确识别已更新至第几集。",
       "tags": [
         "本地源",
