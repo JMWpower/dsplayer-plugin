@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-17T13:20:00+08:00",
+  "updatedAt": "2026-11-17T13:26:17+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -314,7 +314,7 @@
       "version": "2.0.7",
       "type": "server",
       "category": "app",
-      "url": "https://github.com/JMWpower/dsplayer-plugin/releases/download/v2.0.7-drpy-node/drpy-node-2.0.7.zip",
+      "url": "packages/drpy-node-2.0.7.zip",
       "size": 36420686,
       "md5": "b2b44825c328f949580941347261b29e",
       "changelog": "v2.0.7：drpy-node 新手整合包，内置管理后台、解析插件与演示源，端口 5757。",
