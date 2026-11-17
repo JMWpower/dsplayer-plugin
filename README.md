@@ -17,6 +17,7 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 | 多聚网盘（安卓） | `duojupan` | 1.6.1 | import | `duojupan-1.6.1.zip` |
 | 多聚网盘（Windows） | `duojupan-win` | 1.6.1 | import | `duojupan-win-1.6.1.zip` |
 | 蓝莓短剧 | `lanmei-lite` | 1.0.18 | import | `lanmei-lite-1.0.18.zip` |
+| TG短剧库 | `tgdrama` | 1.42.6 | import | `tgdrama-1.42.6.zip` |
 
 ### 应用（app）
 
@@ -24,7 +25,10 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 |---|---|---|---|---|
 | 多聚短剧配套源 | `djduanju` | 0.0.2 | source | `djduanju.zip` |
 | MusicK音乐 | `musick-api` | 1.0.0 | server | `music_api-main.zip` |
+| 多聚聚合-node版 | `djnode` | 1.0.0 | server | `djnode-1.0.0.zip` |
+| drpy-node新手包 | `drpy-node` | 2.0.7 | server | `drpy-node-2.0.7.zip` |
 | MusicK音乐配套源 | `musick-source` | 1.2.1 | source | `musick-source.zip` |
 | 多聚听书配套源 | `duoju-ting-source` | 1.9.1 | source | `duoju-ting-source.zip` |
 | 豆瓣盘搜 | `douban-pansou` | 1.1.1 | source | `douban-pansou-1.1.1.zip` |
 | 炫彩主页web源 | `my-home` | 1.0.15 | source | `my-home-1.0.15.zip` |
+| TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |

@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-10-19T14:02:40+08:00",
+  "updatedAt": "2026-11-17T12:21:28+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -234,6 +234,93 @@
       "tags": [
         "本地源",
         "主页"
+      ],
+      "icon": "icons/demo-sources.png",
+      "platforms": [
+        "android",
+        "win32"
+      ]
+    },
+    {
+      "id": "tgdrama",
+      "name": "TG短剧库",
+      "author": "JmwPower",
+      "desc": "Telegram 短剧媒体库：自动采集、多清晰度、CDN 分发播放、边播边落盘、限流倒计时恢复。安卓端后台服务。",
+      "version": "1.42.6",
+      "type": "import",
+      "size": 9485971,
+      "url": "packages/tgdrama-1.42.6.zip",
+      "icon": "icons/duoju.png",
+      "tags": [
+        "网络",
+        "服务"
+      ],
+      "changelog": "v1.42.6：Telegram 短剧媒体库，自动采集、多清晰度、CDN 分发播放、边播边落盘、限流倒计时恢复。",
+      "md5": "a691c828b794b42fb7d80248186f9565",
+      "category": "env",
+      "platforms": [
+        "android"
+      ]
+    },
+    {
+      "id": "tgdrama-source",
+      "name": "TG短剧库配套源",
+      "author": "JmwPower",
+      "desc": "TG短剧库 Web 规则源：Telegram 短剧媒体库播放界面。需先安装「TG短剧库」后台服务。",
+      "version": "1.0.0",
+      "type": "source",
+      "category": "app",
+      "url": "packages/tgdrama-source.zip",
+      "size": 48523,
+      "md5": "cc3ee84fc5646a526813660ac9c1d726",
+      "changelog": "v1.0.0：TG短剧库 Web 规则源，对接本地后台服务播放。",
+      "tags": [
+        "本地源",
+        "短剧"
+      ],
+      "icon": "icons/duoju.png",
+      "platforms": [
+        "android",
+        "win32"
+      ]
+    },
+    {
+      "id": "djnode",
+      "name": "多聚聚合-node版",
+      "author": "JmwPower",
+      "desc": "多聚聚合 Node.js 版（duoju-super-node）：短剧/漫画/音乐/听书聚合服务，默认端口 5689。需先安装 nodejs 运行时插件。",
+      "version": "1.0.0",
+      "type": "server",
+      "category": "app",
+      "url": "packages/djnode-1.0.0.zip",
+      "size": 5270926,
+      "md5": "43efecc93fa3ff369e16c602a6563753",
+      "changelog": "v1.0.0：多聚聚合服务端 Node.js 版，集成短剧/漫画/音乐/听书聚合，端口 5689。",
+      "tags": [
+        "服务",
+        "聚合"
+      ],
+      "icon": "icons/duoju.png",
+      "platforms": [
+        "android",
+        "win32"
+      ]
+    },
+    {
+      "id": "drpy-node",
+      "name": "drpy-node新手包",
+      "author": "JmwPower",
+      "desc": "drpy-node（drpyS）新手包 v2.0.7：开箱即用的解析服务端，内置管理后台与常用解析插件，默认端口 5757。需先安装 nodejs 运行时插件。",
+      "version": "2.0.7",
+      "type": "server",
+      "category": "app",
+      "url": "packages/drpy-node-2.0.7.zip",
+      "size": 36420686,
+      "md5": "b2b44825c328f949580941347261b29e",
+      "changelog": "v2.0.7：drpy-node 新手整合包，内置管理后台、解析插件与演示源，端口 5757。",
+      "tags": [
+        "服务",
+        "解析"
       ],
       "icon": "icons/demo-sources.png",
       "platforms": [
