@@ -34,3 +34,4 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 | TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |
 | 阅读源·Node聚合 | `legado-node` | 2.3.0 | server | `legado-node-2.3.0.zip` |
 | 阅读源·Node聚合配套源 | `legado-node-source` | 1.0.0 | source | `legado-node-source-1.0.0.zip` |
+| 阅读书架·TVBox配套源 | `legado-tvbox-source` | 1.0.0 | source | `legado-tvbox-source-1.0.0.zip` |
