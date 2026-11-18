@@ -14,7 +14,8 @@ const entry = {
   name: '阅读源·Node聚合',
   author: '江湖',
   desc: '把本地 sources.json 里的乐读书源聚合成一份 HTML 规则书源（/legado_html.json，阅读器直接导入），'
-    + '自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入）'
+    + '自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入，'
+    + '也支持直接选文件或拖入本地书源 JSON，手机浏览器打开即用）'
     + '与 T3/T4/正文接口，默认端口 13000，无第三方依赖。需先安装 nodejs 运行时插件。',
   version,
   type: 'server',
@@ -22,8 +23,9 @@ const entry = {
   url: 'packages/legado-node-' + version + '.zip',
   size: Number(size),
   md5,
-  changelog: customLog || ('v' + version + '：书源状态徽章 + 「检测全部」体检（空内容不再无解释）；导入后自动检测并提示原因；'
-    + '修复请求头全角连字符导致的 Cannot convert argument to a ByteString；JS 规则源明确报错而不是静默空白；书库默认挑可用源。'),
+  changelog: customLog || ('v' + version + '：移动端适配——页签独占一行、筛选两列、书库封面窄屏两列，360px 无横向滚动；'
+    + '源仓库卡片缩成只显示仓库名的一行胶囊（当前仓库高亮），一屏放下四个仓库；'
+    + '仓库列表「导入」固定在右侧同一行，源管理 7 个操作按钮压成一行。'),
   tags: ['服务', '书源', '聚合'],
   icon: 'icons/legado.png',
   platforms: ['android', 'win32'],
