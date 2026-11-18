@@ -22,7 +22,8 @@ const entry = {
   url: 'packages/legado-node-' + version + '.zip',
   size: Number(size),
   md5,
-  changelog: 'v' + version + '：py 规则源改为 HTML 规则书源（阅读器直接导入）；新增管理面板与三个源仓库一键导入；书源增删改热重载。',
+  changelog: 'v' + version + '：书源状态徽章 + 「检测全部」体检（空内容不再无解释）；导入后自动检测并提示原因；'
+    + '修复请求头全角连字符导致的 Cannot convert argument to a ByteString；JS 规则源明确报错而不是静默空白；书库默认挑可用源。',
   tags: ['服务', '书源', '聚合'],
   icon: 'icons/legado.png',
   platforms: ['android', 'win32'],
