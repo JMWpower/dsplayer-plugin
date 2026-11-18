@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-17T13:26:17+08:00",
+  "updatedAt": "2026-11-18T15:58:04+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -323,6 +323,29 @@
         "解析"
       ],
       "icon": "icons/demo-sources.png",
+      "platforms": [
+        "android",
+        "win32"
+      ]
+    },
+    {
+      "id": "legado-node",
+      "name": "阅读源·Node聚合",
+      "author": "江湖",
+      "desc": "把本地 sources.json 里的乐读书源聚合成一份 HTML 规则书源（/legado_html.json，阅读器直接导入），自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入）与 T3/T4/正文接口，默认端口 13000，无第三方依赖。需先安装 nodejs 运行时插件。",
+      "version": "2.0.0",
+      "type": "server",
+      "category": "app",
+      "url": "packages/legado-node-2.0.0.zip",
+      "size": 2034920,
+      "md5": "5ad4f7245ad8a333488bf581aaf0568b",
+      "changelog": "v2.0.0：py 规则源改为 HTML 规则书源（阅读器直接导入）；新增管理面板与三个源仓库一键导入；书源增删改热重载。",
+      "tags": [
+        "服务",
+        "书源",
+        "聚合"
+      ],
+      "icon": "icons/legado.png",
       "platforms": [
         "android",
         "win32"
