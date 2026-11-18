@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-18T15:58:04+08:00",
+  "updatedAt": "2026-11-18T16:06:31+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -344,6 +344,29 @@
         "服务",
         "书源",
         "聚合"
+      ],
+      "icon": "icons/legado.png",
+      "platforms": [
+        "android",
+        "win32"
+      ]
+    },
+    {
+      "id": "legado-node-source",
+      "name": "阅读源·Node聚合配套源",
+      "author": "江湖",
+      "desc": "配合「阅读源·Node聚合」服务使用的 py 书源（hipy 引擎）：一个源看全部乐读书源，分类=书源、书=条目、正文按 novel:// 交付，数据全部走本机 Node 服务（默认 http://127.0.0.1:13000）。需先安装同市场的服务包，服务没起来时源不可用。",
+      "version": "1.0.0",
+      "type": "source",
+      "category": "app",
+      "url": "packages/legado-node-source-1.0.0.zip",
+      "size": 7286,
+      "md5": "8af557464c97e982f159a9162822a4f8",
+      "changelog": "v1.0.0：首个版本，提供阅读配套 py 源（novel:// 正文），与阅读源·Node聚合服务成对使用。",
+      "tags": [
+        "书源",
+        "阅读",
+        "配套"
       ],
       "icon": "icons/legado.png",
       "platforms": [
