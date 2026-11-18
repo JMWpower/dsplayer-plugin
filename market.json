@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-18T16:42:42+08:00",
+  "updatedAt": "2026-11-18T16:53:28+08:00",
   "plugins": [
     {
       "id": "duoju-lite-green",
@@ -333,13 +333,13 @@
       "name": "阅读源·Node聚合",
       "author": "江湖",
       "desc": "把本地 sources.json 里的乐读书源聚合成一份 HTML 规则书源（/legado_html.json，阅读器直接导入），自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入）与 T3/T4/正文接口，默认端口 13000，无第三方依赖。需先安装 nodejs 运行时插件。",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-node-2.1.0.zip",
-      "size": 135740,
-      "md5": "0cd54b74f7900a13d74d00e457f7c9ea",
-      "changelog": "v2.1.0：书源状态徽章 + 「检测全部」体检（空内容不再无解释）；导入后自动检测并提示原因；修复请求头全角连字符导致的 Cannot convert argument to a ByteString；JS 规则源明确报错而不是静默空白；书库默认挑可用源。",
+      "url": "packages/legado-node-2.1.1.zip",
+      "size": 136300,
+      "md5": "2b107e4d5286850e1b786efc7071dae8",
+      "changelog": "v2.1.1：书源状态徽章 + 「检测全部」体检（空内容不再无解释，能看出是站挂了还是规则不合）；导入后自动检测并提示原因；修复书源请求头里的全角连字符导致的 Cannot convert argument to a ByteString；JS 规则源明确报错而不是静默空白；书库默认自动挑可用源，第 0 个源失效也不会整页空白。",
       "tags": [
         "服务",
         "书源",

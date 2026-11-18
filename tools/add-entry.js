@@ -1,12 +1,12 @@
 'use strict';
-/* 把 legado-node 条目写进市场索引：node tools/add-entry.js <version> <size> <md5> */
+/* 把 legado-node 条目写进市场索引：node tools/add-entry.js <version> <size> <md5> [changelog] */
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
 const root = path.join(__dirname, '..');
 const file = path.join(root, 'market.json');
-const [version = '2.0.0', size = '0', md5 = ''] = process.argv.slice(2);
+const [version = '2.0.0', size = '0', md5 = '', customLog = ''] = process.argv.slice(2);
 
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
 const entry = {
@@ -22,8 +22,8 @@ const entry = {
   url: 'packages/legado-node-' + version + '.zip',
   size: Number(size),
   md5,
-  changelog: 'v' + version + '：书源状态徽章 + 「检测全部」体检（空内容不再无解释）；导入后自动检测并提示原因；'
-    + '修复请求头全角连字符导致的 Cannot convert argument to a ByteString；JS 规则源明确报错而不是静默空白；书库默认挑可用源。',
+  changelog: customLog || ('v' + version + '：书源状态徽章 + 「检测全部」体检（空内容不再无解释）；导入后自动检测并提示原因；'
+    + '修复请求头全角连字符导致的 Cannot convert argument to a ByteString；JS 规则源明确报错而不是静默空白；书库默认挑可用源。'),
   tags: ['服务', '书源', '聚合'],
   icon: 'icons/legado.png',
   platforms: ['android', 'win32'],
