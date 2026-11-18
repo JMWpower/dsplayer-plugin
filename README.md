@@ -32,5 +32,5 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 | 豆瓣盘搜 | `douban-pansou` | 1.1.1 | source | `douban-pansou-1.1.1.zip` |
 | 炫彩主页web源 | `my-home` | 1.0.15 | source | `my-home-1.0.15.zip` |
 | TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |
-| 阅读源·Node聚合 | `legado-node` | 2.1.1 | server | `legado-node-2.1.1.zip` |
+| 阅读源·Node聚合 | `legado-node` | 2.2.0 | server | `legado-node-2.2.0.zip` |
 | 阅读源·Node聚合配套源 | `legado-node-source` | 1.0.0 | source | `legado-node-source-1.0.0.zip` |

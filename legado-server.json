@@ -5,6 +5,6 @@
   "entry": "index.js",
   "port": 13000,
   "healthType": "tcp",
-  "version": "2.1.1",
-  "desc": "阅读源 · Node 聚合服务 v2.1.1：把本地 sources.json 里的乐读书源聚合成一份 HTML 规则书源（/legado_html.json，阅读器直接导入），自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入），每个源带可用性状态徽章与「检测全部」体检（能看到谁失效、为什么空），书库默认自动挑可用源，并有 T3/T4/正文接口，默认端口 13000，无第三方依赖。需先安装 nodejs 运行时插件。"
+  "version": "2.2.0",
+  "desc": "阅读源 · Node 聚合服务 v2.2.0：把本地 sources.json 里的乐读书源聚合成一份 HTML 规则书源（/legado_html.json，阅读器直接导入），自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入，也支持直接选文件或拖入本地书源 JSON），每个源带可用性状态徽章与「检测全部」体检（能看到谁失效、为什么空），书库默认自动挑可用源，并有 T3/T4/正文接口，默认端口 13000，无第三方依赖。需先安装 nodejs 运行时插件。"
 }
