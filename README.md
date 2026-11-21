@@ -12,27 +12,19 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 
 | 条目 | id | 版本 | type | 包 |
 |---|---|---|---|---|
-| 多聚短剧·绿色版 | `duoju-lite-green` | 1.4.60 | import | `duoju-lite-green.zip` |
 | 多聚听书 | `duoju-ting` | 1.9.3 | import | `duoju-ting.zip` |
 | 多聚网盘（安卓） | `duojupan` | 1.6.1 | import | `duojupan-1.6.1.zip` |
-| 多聚网盘（Windows） | `duojupan-win` | 1.6.1 | import | `duojupan-win-1.6.1.zip` |
-| 蓝莓短剧 | `lanmei-lite` | 1.0.18 | import | `lanmei-lite-1.0.18.zip` |
-| TG短剧库 | `tgdrama` | 1.42.6 | import | `tgdrama-1.42.6.zip` |
+| TG短剧库 | `tgdrama` | 1.45.1 | import | `tgdrama-1.45.1.zip` |
 
 ### 应用（app）
 
 | 条目 | id | 版本 | type | 包 |
 |---|---|---|---|---|
-| 多聚短剧配套源 | `djduanju` | 0.0.2 | source | `djduanju.zip` |
 | MusicK音乐 | `musick-api` | 1.0.0 | server | `music_api-main.zip` |
 | 多聚聚合-node版 | `djnode` | 1.0.0 | server | `djnode-1.0.0.zip` |
-| drpy-node新手包 | `drpy-node` | 2.0.7 | server | `drpy-node-2.0.7.zip` |
 | MusicK音乐配套源 | `musick-source` | 1.2.1 | source | `musick-source.zip` |
 | 多聚听书配套源 | `duoju-ting-source` | 1.9.1 | source | `duoju-ting-source.zip` |
 | 豆瓣盘搜 | `douban-pansou` | 1.1.1 | source | `douban-pansou-1.1.1.zip` |
 | 炫彩主页web源 | `my-home` | 1.0.15 | source | `my-home-1.0.15.zip` |
 | TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |
-| 阅读源·Node聚合 | `legado-node` | 2.3.0 | server | `legado-node-2.3.0.zip` |
-| Legado Server · Node阅读后端 | `legado-server-node` | 1.0.0 | server | `legado-server-node-1.0.0.zip` |
-| 阅读源·Node聚合配套源 | `legado-node-source` | 1.0.1 | source | `legado-node-source-1.0.1.zip` |
-| 阅读书架·TVBox配套源 | `legado-tvbox-source` | 1.0.1 | source | `legado-tvbox-source-1.0.1.zip` |
+| Legado Server · Node阅读后端 | `legado-server-node` | 1.1.1 | server | `legado-server-node.zip` |
