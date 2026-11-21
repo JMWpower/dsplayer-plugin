@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 |---|---|---|---|---|
 | 多聚听书 | `duoju-ting` | 1.9.3 | import | `duoju-ting.zip` |
 | 多聚网盘（安卓） | `duojupan` | 1.6.1 | import | `duojupan-1.6.1.zip` |
-| TG短剧库 | `tgdrama` | 1.45.1 | import | `tgdrama-1.45.1.zip` |
+| TG短剧库 | `tgdrama` | 1.45.2 | import | `tgdrama-1.45.2.zip` |
 
 ### 应用（app）
 
