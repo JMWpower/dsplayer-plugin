@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T00:30:00+08:00",
+  "updatedAt": "2026-11-22T03:10:00+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -10,7 +10,8 @@
     "duojupan-win-1.6.1.zip",
     "lanmei-lite-1.0.18.zip",
     "legado-server-node-1.0.0.zip",
-    "legado-tvbox-source-1.0.1.zip"
+    "legado-tvbox-source-1.0.1.zip",
+    "legado-server-node-1.2.1.zip"
   ],
   "plugins": [
     {
@@ -234,14 +235,14 @@
       "id": "legado-server-node",
       "name": "阅读图书馆·Node",
       "author": "jmwpower",
-      "desc": "Legado（开源阅读）服务端 Node 移植版（Fastify + SQLite）：Web 书架、本地书 TXT/EPUB 导入、封面直出、正文插图与漫画图床代理、Z-Library 图书馆，TVBox / DsPlayer 订阅 /sub 可直接填；默认 5268，纯 JS sqlite 无原生模块，Android / Windows 通用。需先装 nodejs 运行时（Node >= 22.5），数据写在包外 legado-server-data/，覆盖升级不丢书。**不预置任何书源**：装好后到「源管理 → 源仓库」或贴 JSON / 地址导入（导入保留原分组）。",
-      "version": "1.2.1",
+      "desc": "Legado（开源阅读）服务端 Node 移植版（Fastify + SQLite）：Web 书架、本地书 TXT/EPUB 导入、封面直出、正文插图与漫画图床代理、Z-Library 图书馆，TVBox / DsPlayer 订阅 /sub 可直接填；默认 5268，纯 JS sqlite 无原生模块，Android / Windows 通用。v1.3.0 按官方 Legado 规则引擎对齐重写：新增 XPath 规则、{$.xxx} JSONPath 模板、非规范 JSON 链接参数、官方 charset 语义（请求编码/响应解码分离）、URL 选项与占位符修正；附带 Go 网络引擎（win-x64 / linux-x64 / linux-arm64，自动走系统代理与浏览器 TLS 指纹，解决 Node 直连被重置；引擎缺失时自动用 Node 原生）。需先装 nodejs 运行时（Node >= 22.5），数据写在包外 legado-server-data/，覆盖升级不丢书。**不预置任何书源**：装好后到「源管理 → 源仓库」或贴 JSON / 地址导入（导入保留原分组）。",
+      "version": "1.3.0",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-server-node-1.2.1.zip",
-      "size": 3878211,
-      "md5": "45f56d02d39e11a8ceaef35de79d1136",
-      "changelog": "v1.2.1：按在架 1.1.1 逐文件对齐，只改这几处。①去掉内置源：首次启动源表为空，不再塞 10 个默认源；②清掉「只在页面上存在」的入口：书源登录的内置浏览器登录（后端无 /browser/* 接口）、书架「重新解析本地文件」、清除缓存里的「音频缓存」、书架空态的 WebDAV 说法；③修参数错配：源分组清空 / 书架分组删除 / 订阅源删除 / 清除缓存 这 4 个 DELETE 前端走 query、后端读 body（必 400），现在两边都认；搜书范围的分组筛选前端传 group、后端读 groups（筛选形同虚设），现在都认；二次导入（网络 / 本地 JSON / 在线）原本丢掉 bookSourceGroup，导入后分组全变未分组，现已保留；④补 GET /api/books/images/illustration 正文插图代理，阅读器点插图不再报「加载失败」。包体 3.70MB。",
+      "url": "packages/legado-server-node-1.3.0.zip",
+      "size": 12654180,
+      "md5": "7ef96318d8e1e7c08fd6b382e82f9ce8",
+      "changelog": "v1.3.0：以官方 Legado（LegadoTeam/legado）AnalyzeUrl / AnalyzeByXPath / AnalyzeByJSonPath / OkHttpUtils 为准做的兼容性重写，解决「3000+ 书源只有 19 个能用」：①网络层改为 Go 编写的网络引擎（utls 浏览器 TLS 指纹 + HTTP/2 + 自动识别系统代理），Node 直连被重置的站点恢复可达，实测可达源 616 → 1403；引擎不可用或显式关闭时自动回退 Node 原生链路，无代理环境同样可用。②修 URL 链接参数解析（,{...} 切片偏移错误导致 POST / charset / body 全失效）、补 <key>/<keyword> 占位符与页码映射。③新增 XPath 规则引擎（//tag、[@attr=]、[n]、text()、@attr、following-sibling:: 等），补 {$.xxx}/{$.xxx} JSONPath 模板求值（官方 innerRule 语义）。④对齐官方 GSON 宽松解析：单引号 / 无引号键 / 注释等非规范链接参数。⑤charset 只用于请求参数编码，响应解码按 HTTP 头 → HTML meta → 显式 charset 兜底，修复 UTF-8 页面被按 GBK 解成乱码。⑥修详情页/目录页 JS 上下文传递导致的崩溃。实测（导入 V3 全部 3101 源 → 去重 2237 → 可达 1403 → 真实链路搜索→详情→目录）：可用源 19 → 172；干净解包按插件实跑：0 源、导入保组、搜索 100/20/30/50/74 条、目录 5/30/30/30/20 章、多章正文 1.7–2.3k 字无乱码、/sub 与 vod 搜索 304 条 / 详情 20 章 / 播放串正常。",
       "tags": [
         "服务",
         "书源",
