@@ -5,49 +5,6 @@
   "updatedAt": "2026-11-19T07:00:28+08:00",
   "plugins": [
     {
-      "id": "duoju-lite-green",
-      "name": "多聚短剧·绿色版",
-      "author": "JmwPower",
-      "desc": "多聚短剧精简版。",
-      "version": "1.4.60",
-      "type": "import",
-      "size": 6071313,
-      "url": "packages/duoju-lite-green.zip",
-      "icon": "icons/duoju.png",
-      "tags": [
-        "网络",
-        "服务"
-      ],
-      "changelog": "v1.4.60：修复自动切集几集后没声音；加起播看门狗防黑屏。",
-      "md5": "8bdfd5c0be9ddea68bb3a91a15b28ef8",
-      "category": "env",
-      "platforms": [
-        "android"
-      ]
-    },
-    {
-      "id": "djduanju",
-      "name": "多聚短剧配套源",
-      "author": "JmwPower",
-      "desc": "多聚短剧配套源。",
-      "version": "0.0.2",
-      "type": "source",
-      "category": "app",
-      "url": "packages/djduanju.zip",
-      "size": 5343,
-      "md5": "1644f9c8b104d263da1471d5a3733926",
-      "changelog": "绿色版。",
-      "tags": [
-        "本地源",
-        "应用"
-      ],
-      "icon": "icons/demo-sources.png",
-      "platforms": [
-        "android",
-        "win32"
-      ]
-    },
-    {
       "id": "musick-api",
       "name": "MusicK音乐",
       "author": "JmwPower",
@@ -156,31 +113,10 @@
       ]
     },
     {
-      "id": "duojupan-win",
-      "name": "多聚网盘 Windows版",
-      "author": "JmwPower",
-      "desc": "多聚网盘后台 Windows 端：夸克/UC/百度网盘登录管理与分享播放，豆瓣分类与盘搜聚合 API，供盘搜规则调用。",
-      "version": "1.6.1",
-      "type": "import",
-      "size": 10312294,
-      "url": "packages/duojupan-win-1.6.1.zip",
-      "icon": "icons/duoju.png",
-      "tags": [
-        "网络",
-        "服务"
-      ],
-      "changelog": "v1.6.1：追剧栏精简为只显示「看到第几集」，移除追更刷新。",
-      "md5": "625eae88b2d11634a81bb12061e3ff20",
-      "category": "env",
-      "platforms": [
-        "win32"
-      ]
-    },
-    {
       "id": "douban-pansou",
       "name": "豆瓣盘搜",
       "author": "JmwPower",
-      "desc": "豆瓣影视聚合盘搜规则：豆瓣分类/搜索聚合夸克/UC/百度网盘资源，封面与详细资料推送到原生播放页。需先安装「多聚网盘」。",
+      "desc": "多聚网盘配套源，豆瓣影视聚合盘搜规则：豆瓣分类/搜索聚合夸克/UC/百度网盘资源，封面与详细资料推送到原生播放页。需先安装「多聚网盘」。",
       "version": "1.1.1",
       "type": "source",
       "category": "app",
@@ -196,27 +132,6 @@
       "platforms": [
         "android",
         "win32"
-      ]
-    },
-    {
-      "id": "lanmei-lite",
-      "name": "蓝莓短剧",
-      "author": "JmwPower",
-      "desc": "蓝莓短剧站点适配插件,需口令",
-      "version": "1.0.18",
-      "type": "import",
-      "size": 3383683,
-      "url": "packages/lanmei-lite-1.0.18.zip",
-      "icon": "icons/lanmei.png",
-      "tags": [
-        "网络",
-        "服务"
-      ],
-      "changelog": "v1.0.18：修复站点登录轮换会话后口令门态丢失导致的全集解析失败与资料/绑定状态异常；解析撞门自动补门重试。",
-      "md5": "394f12c3edf8a0613204981303c011b4",
-      "category": "env",
-      "platforms": [
-        "android"
       ]
     },
     {
@@ -307,73 +222,6 @@
       ]
     },
     {
-      "id": "drpy-node",
-      "name": "drpy-node新手包",
-      "author": "JmwPower",
-      "desc": "drpy-node（drpyS）新手包 v2.0.7：开箱即用的解析服务端，老手自行忽略，内置管理后台与常用解析插件，默认端口 5757。",
-      "version": "2.0.7",
-      "type": "server",
-      "category": "app",
-      "url": "packages/drpy-node-2.0.7.zip",
-      "size": 36420686,
-      "md5": "b2b44825c328f949580941347261b29e",
-      "changelog": "v2.0.7：drpy-node 新手整合包，内置管理后台、解析插件与演示源，端口 5757。",
-      "tags": [
-        "服务",
-        "解析"
-      ],
-      "icon": "icons/demo-sources.png",
-      "platforms": [
-        "android",
-        "win32"
-      ]
-    },
-    {
-      "id": "legado-node",
-      "name": "阅读源·Node聚合",
-      "author": "江湖",
-      "desc": "把本地 sources.json 里的乐读书源聚合成一份 HTML 规则书源（/legado_html.json，阅读器直接导入），自带管理面板（浏览内容 / 源管理 / 源仓库三页签，内置 yiove、yuancang.cc、yckceo.com 三个书源仓库一键导入，也支持直接选文件或拖入本地书源 JSON，手机浏览器打开即用）与 T3/T4/正文接口，默认端口 13000，无第三方依赖。需先安装 nodejs 运行时插件。",
-      "version": "2.3.0",
-      "type": "server",
-      "category": "app",
-      "url": "packages/legado-node-2.3.0.zip",
-      "size": 143342,
-      "md5": "25139fa362a473ed157388921bc22401",
-      "changelog": "v2.3.0：移动端适配——页签独占一行、筛选两列、书库封面窄屏两列，360px 无横向滚动；源仓库卡片缩成只显示仓库名的一行胶囊（当前仓库高亮），一屏放下四个仓库；仓库列表「导入」固定在右侧同一行，源管理 7 个操作按钮压成一行。",
-      "tags": [
-        "服务",
-        "书源",
-        "聚合"
-      ],
-      "icon": "icons/legado.png",
-      "platforms": [
-        "android",
-        "win32"
-      ]
-    },
-    {
-      "id": "legado-node-source",
-      "name": "阅读源·Node聚合配套源",
-      "author": "江湖",
-      "desc": "配合「阅读源·Node聚合」服务使用的 py 书源（hipy 引擎）：一个源看全部乐读书源，分类=书源、书=条目、正文按 novel:// 交付，数据全部走本机 Node 服务（默认 http://127.0.0.1:13000）。需先安装同市场的服务包，服务没起来时源不可用。 v1.0.1 起 py 源文件名带 [书] 标签（TVBox 壳子据此归入阅读类）。",
-      "version": "1.0.1",
-      "type": "source",
-      "category": "app",
-      "url": "packages/legado-node-source-1.0.1.zip",
-      "size": 7305,
-      "md5": "eff562aae2eff9d2bcb5579dde95f9e5",
-      "changelog": "v1.0.1：py 源文件名加 [书] 标签（阅读源Node聚合[书].py），TVBox 壳子按标签归入阅读类规则；功能与 v1.0.0 完全一致。升级后请手动删除旧的无标签同名源，避免列表里出现重复条目。",
-      "tags": [
-        "书源",
-        "阅读",
-        "配套"
-      ],
-      "icon": "icons/legado.png",
-      "platforms": [
-        "android",
-        "win32"
-      ]
-    },   {
       "id": "legado-server-node",
       "name": "阅读图书馆·Node",
       "author": "jmwpower",
