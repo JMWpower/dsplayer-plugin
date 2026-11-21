@@ -2,7 +2,18 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-21T22:43:07+08:00",
+  "updatedAt": "2026-11-21T22:55:12+08:00",
+  "hidden": [
+    "djduanju.zip",
+    "drpy-node-2.0.7.zip",
+    "duoju-lite-green.zip",
+    "duojupan-win-1.6.1.zip",
+    "lanmei-lite-1.0.18.zip",
+    "legado-node-2.3.0.zip",
+    "legado-node-source-1.0.1.zip",
+    "legado-server-node-1.0.0.zip",
+    "legado-tvbox-source-1.0.1.zip"
+  ],
   "plugins": [
     {
       "id": "musick-api",

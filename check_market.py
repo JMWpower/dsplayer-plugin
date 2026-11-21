@@ -5,7 +5,8 @@
 发版前必跑；退出码非零 = 拒绝发布。七项校验（R1-R6 + abis 词法 + 完整性）：
   1. market.json 可解析、条目 id 唯一、四要素（id/name/version/url）齐全
   2. 相对 url 指向的包存在于 packages/；packages/ 无孤儿文件（绝对 URL
-     条目走 Release 分发，只查 md5 已声明，不查本地）
+     条目走 Release 分发，只查 md5 已声明，不查本地；顶层 hidden 数组
+     列出的包 = 已下架但保留，跳孤儿判定，且必须真实存在）
   3. 本地包文件 md5 == 索引声明 md5
   4. platforms 全量显式（R1）、恰好一词（R2）、词表内 android/win32（R3）
   5. abis 声名词法：缺省（未声明）= arm64-v8a；显式 [] = 不限；词表内
@@ -116,6 +117,8 @@ def main():
               lines or [f'{len(plugins)} 条目，id 全部唯一'])
 
     by_id = {str(e.get('id')): e for e in plugins}
+    # 顶层 hidden：已下架但保留在 packages/ 的包文件名，不计孤儿、也不进 README 条目表
+    hidden = {str(x) for x in (data.get('hidden') or [])}
 
     # ---- 2. 包存在 + 无孤儿（绝对 URL 豁免本地检查）----
     lines, ok = [], True
@@ -132,17 +135,24 @@ def main():
             ok = False
         else:
             local_urls[os.path.normpath(p)] = eid
-    orphans = []
-    for fn in sorted(os.listdir(PKGS)) if os.path.isdir(PKGS) else []:
+    orphans, unknown_hidden = [], []
+    pkg_files = set(os.listdir(PKGS)) if os.path.isdir(PKGS) else set()
+    for fn in sorted(pkg_files):
         p = os.path.normpath(os.path.join(PKGS, fn))
-        if p not in local_urls:
+        if p not in local_urls and fn not in hidden:
             orphans.append(fn)
+    for fn in sorted(hidden - pkg_files):
+        unknown_hidden.append(fn)
+    if unknown_hidden:
+        lines.append(f'hidden 白名单里的包不存在：{unknown_hidden}')
+        ok = False
     if orphans:
         lines.append(f'packages/ 孤儿文件（无条目引用）：{orphans}')
         ok = False
     rpt.check('2. 包存在于 packages/ 且无孤儿文件', ok,
               lines or [f'本地包 {len(local_urls)} 个全有条目；'
-                        f'Release 分发 {len(remote_ids)} 条（{sorted(remote_ids) or "无"}）豁免'])
+                        f'Release 分发 {len(remote_ids)} 条（{sorted(remote_ids) or "无"}）豁免；'
+                        f'hidden 白名单 {len(hidden)} 个'])
 
     # ---- 3. md5 一致（本地包）----
     lines, ok = [], True

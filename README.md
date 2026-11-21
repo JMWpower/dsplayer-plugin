@@ -27,4 +27,10 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 | 豆瓣盘搜 | `douban-pansou` | 1.1.1 | source | `douban-pansou-1.1.1.zip` |
 | 炫彩主页web源 | `my-home` | 1.0.15 | source | `my-home-1.0.15.zip` |
 | TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |
-| Legado Server · Node阅读后端 | `legado-server-node` | 1.1.1 | server | `legado-server-node.zip` |
+| 阅读图书馆·Node | `legado-server-node` | 1.1.1 | server | `legado-server-node.zip` |
+
+### 已下架（暂不显示）
+
+以下包仍保留在 `packages/`，登记在 `market.json` 顶层 `hidden` 数组里（闸门跳过孤儿判定），市场列表不显示。要重新上架：把它们移出 `hidden` 并补回对应条目与 README 行。
+
+`duoju-lite-green.zip` · `duojupan-win-1.6.1.zip` · `lanmei-lite-1.0.18.zip` · `djduanju.zip` · `drpy-node-2.0.7.zip` · `legado-node-2.3.0.zip` · `legado-node-source-1.0.1.zip` · `legado-tvbox-source-1.0.1.zip` · `legado-server-node-1.0.0.zip`
