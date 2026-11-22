@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 | TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |
 | 阅读源·Node聚合 | `legado-node` | 3.0.0 | server | `legado-node-3.0.0.zip` |
 | 阅读源·Node聚合配套源 | `legado-node-source` | 1.1.0 | source | `legado-node-source-1.1.0.zip` |
-| 书架 · 图书馆 | `legado-shelf-library` | 1.1.2 | server | `legado-shelf-library-1.1.2.zip` |
+| 书架 · 图书馆 | `legado-shelf-library` | 1.2.0 | server | `legado-shelf-library-1.2.0.zip` |
 
 ### 已下架（暂不显示）
 
