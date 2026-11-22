@@ -230,30 +230,6 @@
       ]
     },
     {
-      "id": "legado-shelf-library",
-      "name": "书架 · 图书馆",
-      "author": "JmwPower",
-      "desc": "Z-Library 图书馆的服务端插件 v1.1.0：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入与封面缓存。",
-      "version": "1.1.0",
-      "type": "server",
-      "category": "app",
-      "url": "packages/legado-shelf-library-1.1.0.zip",
-      "size": 11357298,
-      "md5": "f49151c64e1de91d553acf3a9255cf12",
-      "changelog": "v1.1.0：修复图书馆反爬校验（旧算法失效导致所有镜像打不开）；内置 zh/en/tw/ja.friday101.ru 与 z101.by 等国内可直连镜像，新增镜像测速与一键切换；修复下载取错直链（首条 /dl/ 常返回 204）导致失败的问题，改为多候选自动回退；导入不支持的格式不再挂死连接。",
-      "tags": [
-        "服务",
-        "书架",
-        "图书馆",
-        "镜像"
-      ],
-      "icon": "icons/shelf-library.png",
-      "platforms": [
-        "android",
-        "win32"
-      ]
-    },
-    {
       "id": "legado-node",
       "name": "阅读源·Node聚合",
       "author": "江湖",
