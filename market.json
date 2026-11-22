@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T10:49:32+08:00",
+  "updatedAt": "2026-11-22T12:02:52+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -256,18 +256,19 @@
       "id": "legado-shelf-library",
       "name": "书架 · 图书馆",
       "author": "JmwPower",
-      "desc": "只保留书架与 Z-Library 图书馆的服务端插件 v1.0.0：图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入与封面缓存，不含在线阅读等阅读功能。",
-      "version": "1.0.0",
+      "desc": "只保留书架与 Z-Library 图书馆的服务端插件 v1.1.0：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入与封面缓存，不含在线阅读等阅读功能。",
+      "version": "1.1.0",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-shelf-library-1.0.0.zip",
-      "size": 11350819,
-      "md5": "bf33ada4f767b9284c9bf159e15c12b3",
-      "changelog": "v1.0.0：书架 + Z-Library 图书馆；图书馆下载改为服务端落盘并自动入库；支持 EPUB/PDF/TXT 等本地导入、私密分组与批量管理。",
+      "url": "packages/legado-shelf-library-1.1.0.zip",
+      "size": 11357298,
+      "md5": "f49151c64e1de91d553acf3a9255cf12",
+      "changelog": "v1.1.0：修复图书馆反爬校验（旧算法失效导致所有镜像打不开）；内置 zh/en/tw/ja.friday101.ru 与 z101.by 等国内可直连镜像，新增镜像测速与一键切换；修复下载取错直链（首条 /dl/ 常返回 204）导致失败的问题，改为多候选自动回退；导入不支持的格式不再挂死连接。",
       "tags": [
         "服务",
         "书架",
-        "图书馆"
+        "图书馆",
+        "镜像"
       ],
       "icon": "icons/shelf-library.png",
       "platforms": [
