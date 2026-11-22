@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T03:10:00+08:00",
+  "updatedAt": "2026-11-22T08:33:55+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -11,7 +11,8 @@
     "lanmei-lite-1.0.18.zip",
     "legado-server-node-1.0.0.zip",
     "legado-tvbox-source-1.0.1.zip",
-    "legado-server-node-1.2.1.zip"
+    "legado-server-node-1.2.1.zip",
+    "legado-server-node-1.3.0.zip"
   ],
   "plugins": [
     {
@@ -235,14 +236,14 @@
       "id": "legado-server-node",
       "name": "阅读图书馆·Node",
       "author": "jmwpower",
-      "desc": "Legado（开源阅读）服务端 Node 移植版（Fastify + SQLite）：Web 书架、本地书 TXT/EPUB 导入、封面直出、正文插图与漫画图床代理、Z-Library 图书馆，TVBox / DsPlayer 订阅 /sub 可直接填；默认 5268，纯 JS sqlite 无原生模块，Android / Windows 通用。v1.3.0 按官方 Legado 规则引擎对齐重写：新增 XPath 规则、{$.xxx} JSONPath 模板、非规范 JSON 链接参数、官方 charset 语义（请求编码/响应解码分离）、URL 选项与占位符修正；附带 Go 网络引擎（win-x64 / linux-x64 / linux-arm64，自动走系统代理与浏览器 TLS 指纹，解决 Node 直连被重置；引擎缺失时自动用 Node 原生）。需先装 nodejs 运行时（Node >= 22.5），数据写在包外 legado-server-data/，覆盖升级不丢书。**不预置任何书源**：装好后到「源管理 → 源仓库」或贴 JSON / 地址导入（导入保留原分组）。",
-      "version": "1.3.0",
+      "desc": "Legado（开源阅读）服务端 Node 移植版（Fastify + SQLite）：Web 书架、本地书 TXT/EPUB 导入、封面直出、正文插图与漫画图床代理、Z-Library 图书馆，TVBox / DsPlayer 订阅 /sub 可直接填；默认 5268，纯 JS sqlite 无原生模块，Android / Windows 通用。v1.4.0 以在线源仓库最新多类型源池为基准对齐官方 AnalyzeRule：补齐 @Json:/@XPath:/@@ 等模式前缀、@put:/@get: 变量、{{...}} 多语句 JS、### 首匹配替换、jsLib 与 loginUrl 分离及会话级 JS 作用域、preUpdateJs、java.connect 链式响应、正则列表选择器与 $1/$2 捕获组、$ 根列表；沿用 v1.3.0 的 Go 网络引擎（win-x64 / linux-x64 / linux-arm64，系统代理 + 浏览器 TLS 指纹）。需先装 nodejs 运行时（Node >= 22.5），数据写在包外 legado-server-data/，覆盖升级不丢书。**不预置任何书源**：装好后到「源管理 → 源仓库」或贴 JSON / 地址导入（导入保留原分组）。",
+      "version": "1.4.0",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-server-node-1.3.0.zip",
-      "size": 12654180,
-      "md5": "7ef96318d8e1e7c08fd6b382e82f9ce8",
-      "changelog": "v1.3.0：以官方 Legado（LegadoTeam/legado）AnalyzeUrl / AnalyzeByXPath / AnalyzeByJSonPath / OkHttpUtils 为准做的兼容性重写，解决「3000+ 书源只有 19 个能用」：①网络层改为 Go 编写的网络引擎（utls 浏览器 TLS 指纹 + HTTP/2 + 自动识别系统代理），Node 直连被重置的站点恢复可达，实测可达源 616 → 1403；引擎不可用或显式关闭时自动回退 Node 原生链路，无代理环境同样可用。②修 URL 链接参数解析（,{...} 切片偏移错误导致 POST / charset / body 全失效）、补 <key>/<keyword> 占位符与页码映射。③新增 XPath 规则引擎（//tag、[@attr=]、[n]、text()、@attr、following-sibling:: 等），补 {$.xxx}/{$.xxx} JSONPath 模板求值（官方 innerRule 语义）。④对齐官方 GSON 宽松解析：单引号 / 无引号键 / 注释等非规范链接参数。⑤charset 只用于请求参数编码，响应解码按 HTTP 头 → HTML meta → 显式 charset 兜底，修复 UTF-8 页面被按 GBK 解成乱码。⑥修详情页/目录页 JS 上下文传递导致的崩溃。实测（导入 V3 全部 3101 源 → 去重 2237 → 可达 1403 → 真实链路搜索→详情→目录）：可用源 19 → 172；干净解包按插件实跑：0 源、导入保组、搜索 100/20/30/50/74 条、目录 5/30/30/30/20 章、多章正文 1.7–2.3k 字无乱码、/sub 与 vod 搜索 304 条 / 详情 20 章 / 播放串正常。",
+      "url": "packages/legado-server-node-1.4.0.zip",
+      "size": 12668552,
+      "md5": "22227cf4b39db5160c50eb91b0ef6203",
+      "changelog": "v1.4.0：以三个在线源仓库（yiove / 源仓库 / yckceo）最新多类型源池为适配基准（去重 496 源，覆盖小说/漫画/音频/视频/发现 type 0–4），按官方 LegadoTeam/legado 的 AnalyzeRule 补齐规则语法：①模式前缀 @Json:/@JSon:/@XPath:/@@/@CSS: 分派、省略 $. 的 JSONPath、bookList=$ 根列表与数组自动展开；②@put:{}/@get:{} 跨规则变量、{{...}} 多语句 JS 求值（不再把副作用返回值拼进 URL）、##match##replace### 首匹配替换、## 正则段与 CSS 选择器分离；③JS 会话作用域：jsLib 与 loginUrl 分离执行（修 loginUrl 带 @js:/<js> 前缀导致整段语法错误、jsLib 函数全部丢失），function/var 跨规则持久可见，块内 return 与重复 let/const 自动降级；④补 preUpdateJs 目录前初始化、source.getLoginInfoMap().get()、java.connect().code() 链式响应、可 new 的 JavaImporter、跨 vm realm 完整错误详情；⑤正则列表选择器 :href=\"(regex)\" 与 $1/$2 捕获组、XPath 特征（(//...)、following::、/text()）识别、<js> 内 || 不误拆、相对 URL 补全。实测新源池 485 源：统一关键词全链路可用 63–66，按各源自带关键词补测后 78–82；复杂聚合源从报错恢复完整链路（自用极品书源 102 条搜索 / 30 章、爱丽丝书屋大侠修 10/10、爱丽丝 alicesw 系列正则目录 10 章、墨阅系列 81 条、再漫画 @Json 前缀）。干净解包按插件实跑 5268：0 源、导入 6 源保组、全链路可搜、/sub 与首页正常。剩余失败主要为站点 404/403/5xx/超时、纯发现/漫画源无 searchUrl、需登录抓包参数与 Android WebView 专有 API，非服务端引擎可解。**不预置任何书源**。",
       "tags": [
         "服务",
         "书源",
