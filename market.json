@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T20:06:49+08:00",
+  "updatedAt": "2026-11-22T20:36:02+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -15,7 +15,8 @@
     "legado-shelf-library-1.1.1.zip",
     "legado-shelf-library-1.1.2.zip",
     "legado-shelf-library-1.2.0.zip",
-    "legado-shelf-library-1.2.1.zip"
+    "legado-shelf-library-1.2.1.zip",
+    "legado-shelf-library-1.2.2.zip"
   ],
   "plugins": [
     {
@@ -286,13 +287,13 @@
       "name": "书架 · 图书馆",
       "author": "JmwPower",
       "desc": "只有书架与 Z-Library 图书馆，电子书由服务端直接下载落盘并入库。",
-      "version": "1.2.2",
+      "version": "1.2.3",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-shelf-library-1.2.2.zip",
-      "size": 11381509,
-      "md5": "cccde71dc24f1ce629483e2dc2df82b4",
-      "changelog": "v1.2.2：点封面从上次读到的章节继续（推送前现取阅读进度；壳子预热第 1 章不再把进度冲回 0）；书架与图书馆改用原版样式，下载任务可关闭，重开页面直接走本地缓存不再重复请求。",
+      "url": "packages/legado-shelf-library-1.2.3.zip",
+      "size": 11381887,
+      "md5": "e8bb268f467b5f5888aa8c4c1d419dd7",
+      "changelog": "v1.2.3：修复壳子预取后面两章导致阅读进度记成「实际章节 + 2」（与原版一致，同一本书 2.5 秒内的连续取章只记第一次）。",
       "tags": [
         "服务",
         "书架",
