@@ -27,13 +27,12 @@ https://raw.githubusercontent.com/JMWpower/dsplayer-plugin/main/market.json
 | 豆瓣盘搜 | `douban-pansou` | 1.1.1 | source | `douban-pansou-1.1.1.zip` |
 | 炫彩主页web源 | `my-home` | 1.0.15 | source | `my-home-1.0.15.zip` |
 | TG短剧库配套源 | `tgdrama-source` | 1.0.0 | source | `tgdrama-source.zip` |
-| 阅读图书馆·Node | `legado-server-node` | 1.5.0 | server | `legado-server-node-1.5.0.zip` |
-| 书架 · 图书馆 | `legado-shelf-library` | 1.1.0 | server | `legado-shelf-library-1.1.0.zip` |
 | 阅读源·Node聚合 | `legado-node` | 3.0.0 | server | `legado-node-3.0.0.zip` |
 | 阅读源·Node聚合配套源 | `legado-node-source` | 1.1.0 | source | `legado-node-source-1.1.0.zip` |
+| 书架 · 图书馆 | `legado-shelf-library` | 1.1.1 | server | `legado-shelf-library-1.1.1.zip` |
 
 ### 已下架（暂不显示）
 
 以下包仍保留在 `packages/`，登记在 `market.json` 顶层 `hidden` 数组里（闸门跳过孤儿判定），市场列表不显示。要重新上架：把它们移出 `hidden` 并补回对应条目与 README 行。
 
-`duoju-lite-green.zip` · `duojupan-win-1.6.1.zip` · `lanmei-lite-1.0.18.zip` · `djduanju.zip` · `drpy-node-2.0.7.zip` · `legado-tvbox-source-1.0.1.zip`
+`duoju-lite-green.zip` · `duojupan-win-1.6.1.zip` · `lanmei-lite-1.0.18.zip` · `djduanju.zip` · `drpy-node-2.0.7.zip` · `legado-tvbox-source-1.0.1.zip` · `legado-server-node-1.5.0.zip` · `legado-shelf-library-1.1.0.zip`
