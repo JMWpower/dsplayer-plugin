@@ -230,33 +230,10 @@
       ]
     },
     {
-      "id": "legado-server-node",
-      "name": "阅读图书馆·Node",
-      "author": "jmwpower",
-      "desc": "Legado（开源阅读）服务端 Node 移植版（Fastify + SQLite）：Web 书架、本地书 TXT/EPUB 导入、封面直出、正文插图与漫画图床代理、Z-Library 图书馆，TVBox / DsPlayer 订阅 /sub 可直接填；默认 5268，纯 JS sqlite 无原生模块，Android / Windows 通用。v1.5.0 起内置 78 个经「搜索→详情→目录」全链路实测的可用书源（小说/漫画/音频/视频/发现多类型，保留源仓库原始分组），装好即可搜书；一次性 seed 只在首次启动写入、不覆盖已有源，可在「源管理」自由删除，删除后重启不再恢复（LEGADO_SEED_SOURCES=0 可关闭）；并修复删除接口在 Content-Type: application/json 且空 body 时返回 500 导致删不掉的问题。v1.4.0 以在线源仓库最新多类型源池为基准对齐官方 AnalyzeRule：补齐 @Json:/@XPath:/@@ 等模式前缀、@put:/@get: 变量、{{...}} 多语句 JS、### 首匹配替换、jsLib 与 loginUrl 分离及会话级 JS 作用域、preUpdateJs、java.connect 链式响应、正则列表选择器与 $1/$2 捕获组、$ 根列表；沿用 v1.3.0 的 Go 网络引擎（win-x64 / linux-x64 / linux-arm64，系统代理 + 浏览器 TLS 指纹）。需先装 nodejs 运行时（Node >= 22.5），数据写在包外 legado-server-data/，覆盖升级不丢书。",
-      "version": "1.5.0",
-      "type": "server",
-      "category": "app",
-      "url": "packages/legado-server-node-1.5.0.zip",
-      "size": 12867984,
-      "md5": "fb3ad37b93eae1e0ec12f57d3e96938d",
-      "changelog": "v1.5.0：按反馈把「可用源默认内置，但可删除」落地。①内置 78 个 v1.4.0 在线源仓库适配后全链路实测通过的可用书源（小说/漫画/音频/视频/发现，保留源仓库原始分组），首次启动自动写入源表，装好即可搜书；②可删除：dist/seedSources.js 用 app_setting 的 builtin_sources_seeded 标记做一次性 seed，仅首次执行、跳过已存在 id 不覆盖老用户数据，之后单条删除/批量删除/删光后重启均不再恢复；LEGADO_SEED_SOURCES=0 可完全关闭；③修复删除书源报 500：前端统一带 Content-Type: application/json 的 DELETE 若 body 为空，Fastify 默认 JSON parser 拒绝并被通用 errorHandler 包成 500（表现为源删不掉），现覆写 JSON parser 把空 body 视为 {}，单条 DELETE 返回 204、批量删除返回 affected；④干净解包按插件默认配置实跑 5268：首次 78 源/38 分组，抽查 6 源全链路 6/6 可搜（搜索 10–30 条、目录 1–30 章），删 3 源后重启仍 75 源，/healthz、/sub、Web 首页正常。v1.4.0 的官方 AnalyzeRule 语法对齐与 v1.3.0 的 Go 网络引擎全部保留。⑤修正打包结构：server.json 回归 zip 根部（与 1.2.1 及其它 server 插件一致），修复 1.3.0 起被误放进 legado-server-node/ 子目录、导致宿主读不到插件清单的问题；重新干净解包实跑 5268 验证 78 源/38 分组、DELETE 204 均正常。",
-      "tags": [
-        "服务",
-        "书源",
-        "聚合"
-      ],
-      "icon": "icons/legado.png",
-      "platforms": [
-        "android",
-        "win32"
-      ]
-    },
-    {
       "id": "legado-shelf-library",
       "name": "书架 · 图书馆",
       "author": "JmwPower",
-      "desc": "只保留书架与 Z-Library 图书馆的服务端插件 v1.1.0：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入与封面缓存，不含在线阅读等阅读功能。",
+      "desc": "Z-Library 图书馆的服务端插件 v1.1.0：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入与封面缓存。",
       "version": "1.1.0",
       "type": "server",
       "category": "app",
