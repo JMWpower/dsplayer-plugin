@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T13:50:44+08:00",
+  "updatedAt": "2026-11-22T14:08:04+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -11,7 +11,8 @@
     "lanmei-lite-1.0.18.zip",
     "legado-tvbox-source-1.0.1.zip",
     "legado-shelf-library-1.1.0.zip",
-    "legado-server-node-1.5.0.zip"
+    "legado-server-node-1.5.0.zip",
+    "legado-shelf-library-1.1.1.zip"
   ],
   "plugins": [
     {
@@ -281,14 +282,14 @@
       "id": "legado-shelf-library",
       "name": "书架 · 图书馆",
       "author": "JmwPower",
-      "desc": "只保留书架与 Z-Library 图书馆的服务端插件 v1.1.1：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入、封面缓存，以及点封面直接阅读 EPUB/TXT 正文。",
-      "version": "1.1.1",
+      "desc": "只保留书架与 Z-Library 图书馆的服务端插件 v1.1.2：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入、封面缓存，以及点封面直接阅读 EPUB/TXT 正文。",
+      "version": "1.1.2",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-shelf-library-1.1.1.zip",
-      "size": 11363947,
-      "md5": "45e174c9792f4483ac0d1c62eebbcfe2",
-      "changelog": "v1.1.1：新增点封面直接阅读（EPUB/TXT，含目录、上一章/下一章、字号与进度记忆）；导入按钮改为原生文件框覆盖，解决部分壳子 WebView 里点「导入」不弹选择器的问题；章节正文不再重复显示标题。v1.1.0：修复图书馆反爬校验（旧算法失效导致所有镜像打不开）；内置 zh/en/tw/ja.friday101.ru 与 z101.by 等国内可直连镜像，新增镜像测速与一键切换；修复下载取错直链（首条 /dl/ 常返回 204）导致失败的问题，改为多候选自动回退；导入不支持的格式不再挂死连接。",
+      "url": "packages/legado-shelf-library-1.1.2.zip",
+      "size": 11364308,
+      "md5": "59210a333d50890a0a3226defb8d2bd9",
+      "changelog": "v1.1.2：修复图书馆反爬校验偶发反复 503（校验页面响应体没读完，导致重试换了连接、被分到不认 token 的另一台后端，表现是搜索/详情偶发报「图书馆返回 HTTP 503」），并把校验重试次数放宽到 8 次。v1.1.1：新增点封面直接阅读（EPUB/TXT，含目录、上一章/下一章、字号与进度记忆）；导入按钮改为原生文件框覆盖，解决部分壳子 WebView 里点「导入」不弹选择器的问题；章节正文不再重复显示标题。v1.1.0：修复图书馆反爬校验（旧算法失效导致所有镜像打不开）；内置 zh/en/tw/ja.friday101.ru 与 z101.by 等国内可直连镜像，新增镜像测速与一键切换；修复下载取错直链（首条 /dl/ 常返回 204）导致失败的问题，改为多候选自动回退；导入不支持的格式不再挂死连接。",
       "tags": [
         "服务",
         "书架",
