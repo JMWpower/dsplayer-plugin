@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T15:42:27+08:00",
+  "updatedAt": "2026-11-22T20:06:49+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -14,7 +14,8 @@
     "legado-server-node-1.5.0.zip",
     "legado-shelf-library-1.1.1.zip",
     "legado-shelf-library-1.1.2.zip",
-    "legado-shelf-library-1.2.0.zip"
+    "legado-shelf-library-1.2.0.zip",
+    "legado-shelf-library-1.2.1.zip"
   ],
   "plugins": [
     {
@@ -284,19 +285,18 @@
       "id": "legado-shelf-library",
       "name": "书架 · 图书馆",
       "author": "JmwPower",
-      "desc": "只保留书架与 Z-Library 图书馆的服务端插件 v1.2.1：内置国内可直连镜像（免代理）与一键测速切换，图书馆电子书由服务端直接下载落盘并自动入库（解析 EPUB 元数据与封面），支持书架分组、批量管理、本地电子书导入、封面缓存；点封面把整本目录推送到壳子阅读器（TVBox 推送桥），无壳子时用内置网页阅读器看 EPUB/TXT 正文。",
-      "version": "1.2.1",
+      "desc": "只有书架与 Z-Library 图书馆，电子书由服务端直接下载落盘并入库。",
+      "version": "1.2.2",
       "type": "server",
       "category": "app",
-      "url": "packages/legado-shelf-library-1.2.1.zip",
-      "size": 11369015,
-      "md5": "e45b93611df6b9bd8608ccf3d540bb68",
-      "changelog": "v1.2.1：点封面改为把整本目录推送到壳子阅读器（移植旧版 lr-tvbox.js 推送桥：vodInline/openVod 推 TVBox 目录、点章按需取正文），壳子外仍回退网页阅读器；导入按钮恢复为与旧版阅读页一致的原生文件框实现；附带 v1.1.2 的修复：图书馆反爬校验偶发反复 503（校验页响应体未读完导致重试换连接，被分到不认 token 的另一台后端）。v1.1.1：新增点封面直接阅读（EPUB/TXT，含目录、上一章/下一章、字号与进度记忆）。v1.1.0：修复图书馆反爬校验（旧算法失效导致所有镜像打不开）；内置 zh/en/tw/ja.friday101.ru 与 z101.by 等国内可直连镜像，新增镜像测速与一键切换；修复下载取错直链（首条 /dl/ 常返回 204）导致失败的问题，改为多候选自动回退；导入不支持的格式不再挂死连接。",
+      "url": "packages/legado-shelf-library-1.2.2.zip",
+      "size": 11381509,
+      "md5": "cccde71dc24f1ce629483e2dc2df82b4",
+      "changelog": "v1.2.2：点封面从上次读到的章节继续（推送前现取阅读进度；壳子预热第 1 章不再把进度冲回 0）；书架与图书馆改用原版样式，下载任务可关闭，重开页面直接走本地缓存不再重复请求。",
       "tags": [
         "服务",
         "书架",
-        "图书馆",
-        "镜像"
+        "图书馆"
       ],
       "icon": "icons/shelf-library.png",
       "platforms": [
