@@ -2,7 +2,7 @@
   "logo": "icons/market.png",
   "name": "DsPlayer JmwPower插件市场",
   "desc": "JmwPower维护的插件分发索引",
-  "updatedAt": "2026-11-22T09:02:29+08:00",
+  "updatedAt": "2026-11-22T09:44:41+08:00",
   "hidden": [
     "djduanju.zip",
     "drpy-node-2.0.7.zip",
@@ -242,9 +242,9 @@
       "type": "server",
       "category": "app",
       "url": "packages/legado-server-node-1.5.0.zip",
-      "size": 12868022,
-      "md5": "8b78843dcff9dde6839e7e3b99e66169",
-      "changelog": "v1.5.0：按反馈把「可用源默认内置，但可删除」落地。①内置 78 个 v1.4.0 在线源仓库适配后全链路实测通过的可用书源（小说/漫画/音频/视频/发现，保留源仓库原始分组），首次启动自动写入源表，装好即可搜书；②可删除：dist/seedSources.js 用 app_setting 的 builtin_sources_seeded 标记做一次性 seed，仅首次执行、跳过已存在 id 不覆盖老用户数据，之后单条删除/批量删除/删光后重启均不再恢复；LEGADO_SEED_SOURCES=0 可完全关闭；③修复删除书源报 500：前端统一带 Content-Type: application/json 的 DELETE 若 body 为空，Fastify 默认 JSON parser 拒绝并被通用 errorHandler 包成 500（表现为源删不掉），现覆写 JSON parser 把空 body 视为 {}，单条 DELETE 返回 204、批量删除返回 affected；④干净解包按插件默认配置实跑 5268：首次 78 源/38 分组，抽查 6 源全链路 6/6 可搜（搜索 10–30 条、目录 1–30 章），删 3 源后重启仍 75 源，/healthz、/sub、Web 首页正常。v1.4.0 的官方 AnalyzeRule 语法对齐与 v1.3.0 的 Go 网络引擎全部保留。",
+      "size": 12867984,
+      "md5": "fb3ad37b93eae1e0ec12f57d3e96938d",
+      "changelog": "v1.5.0：按反馈把「可用源默认内置，但可删除」落地。①内置 78 个 v1.4.0 在线源仓库适配后全链路实测通过的可用书源（小说/漫画/音频/视频/发现，保留源仓库原始分组），首次启动自动写入源表，装好即可搜书；②可删除：dist/seedSources.js 用 app_setting 的 builtin_sources_seeded 标记做一次性 seed，仅首次执行、跳过已存在 id 不覆盖老用户数据，之后单条删除/批量删除/删光后重启均不再恢复；LEGADO_SEED_SOURCES=0 可完全关闭；③修复删除书源报 500：前端统一带 Content-Type: application/json 的 DELETE 若 body 为空，Fastify 默认 JSON parser 拒绝并被通用 errorHandler 包成 500（表现为源删不掉），现覆写 JSON parser 把空 body 视为 {}，单条 DELETE 返回 204、批量删除返回 affected；④干净解包按插件默认配置实跑 5268：首次 78 源/38 分组，抽查 6 源全链路 6/6 可搜（搜索 10–30 条、目录 1–30 章），删 3 源后重启仍 75 源，/healthz、/sub、Web 首页正常。v1.4.0 的官方 AnalyzeRule 语法对齐与 v1.3.0 的 Go 网络引擎全部保留。⑤修正打包结构：server.json 回归 zip 根部（与 1.2.1 及其它 server 插件一致），修复 1.3.0 起被误放进 legado-server-node/ 子目录、导致宿主读不到插件清单的问题；重新干净解包实跑 5268 验证 78 源/38 分组、DELETE 204 均正常。",
       "tags": [
         "服务",
         "书源",
